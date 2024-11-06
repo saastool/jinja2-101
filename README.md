@@ -104,7 +104,7 @@ Jinja allows you to insert variables into templates using the **Expression Delim
 Hello {{ name }}!
 ```
 
-- Copy the **jinja2_101.py** and renamed **jinja2.py**
+- Copy the **jinja2_101.py** and renamed **jinja.py**
 
   Edit step 3, make jinja engine get the template we just added
   ```python
@@ -123,7 +123,7 @@ Hello {{ name }}!
   
   By given template and data, we can try jinja2
   ```bash
-  python3 jinja2.py
+  python3 jinja.py
   ```
 
   The result can be checked by console or /renders/variable_output.txt, it should be
@@ -149,7 +149,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
   {% endif %}
   ```
   
-  - Copy the **jinja2_101.py** and renamed **jinja2.py**
+  - Copy the **jinja2_101.py** and renamed **jinja.py**
   
     Edit step 3, make jinja engine get the template we just added
     ```python
@@ -177,7 +177,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     
     By given template and data, we can try jinja2
     ```bash
-    python3 jinja2.py
+    python3 jinja.py
     ```
   
     The result can be checked by console or /renders/conditional_true_output.txt and /renders/conditional_false_output.txt,
@@ -202,7 +202,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
   {% endfor %}
   ```
   
-  - Copy the **jinja2_101.py** and renamed **jinja2.py**
+  - Copy the **jinja2_101.py** and renamed **jinja.py**
   
     Edit step 3, make jinja engine get the template we just added
     ```python
@@ -221,7 +221,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     
     By given template and data, we can try jinja2
     ```bash
-    python3 jinja2.py
+    python3 jinja.py
     ```
   
     The result can be checked by console or /renders/loop_output.txt, it should be:
@@ -243,7 +243,7 @@ See more built-in filters at [here]([https://jinja.palletsprojects.com/en/stable
 Hello, {{ name|upper }}!
 ```
 
-- Copy the **jinja2_101.py** and renamed **jinja2.py**
+- Copy the **jinja2_101.py** and renamed **jinja.py**
 
   Edit step 3, make jinja engine get the template we just added
   ```python
@@ -262,7 +262,7 @@ Hello, {{ name|upper }}!
   
   By given template and data, we can try jinja2
   ```bash
-  python3 jinja2.py
+  python3 jinja.py
   ```
 
   The result can be checked by console or /renders/filter_output.txt, it should be
@@ -291,7 +291,7 @@ Jinja allows you to defined and call reusable pieces of template code by using *
 Date: {{ format_date(date) }}
 ```
 
-- Copy the **jinja2_101.py** and renamed **jinja2.py**
+- Copy the **jinja2_101.py** and renamed **jinja.py**
 
   Edit step 3, make jinja engine get the template we just added
   ```python
@@ -311,7 +311,7 @@ Date: {{ format_date(date) }}
   
   By given template and data, we can try jinja2
   ```bash
-  python3 jinja2.py
+  python3 jinja.py
   ```
 
   The result can be checked by console or /renders/macro_output.txt, it should be
