@@ -97,8 +97,8 @@ This is a `jinja2` quick start turtorial, which intend to help user quickly unde
 Jinja allows you to insert variables into templates using the **Expression Delimiter: `{{ ... }}`**. Jinja would replace the placeholder from the given data.
 
 - Open your project in your favorite code editor.
-- Create a new jinja template file in the templates directory, named templates/variable-template.jinja
-- Paste the following query into the templates/variable-template.jinja file.
+- Create a new jinja template file in the templates directory, named templates/variable_template.jinja
+- Paste the following query into the templates/variable_template.jinja file.
 
 ```
 Hello {{ name }}!
@@ -138,8 +138,8 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
 - Conditions
   
   - Open your project in your favorite code editor.
-  - Create a new jinja template file in the templates directory, named templates/conditional-template.jinja
-  - Paste the following query into the templates/conditional-template.jinja file.
+  - Create a new jinja template file in the templates directory, named templates/conditional_template.jinja
+  - Paste the following query into the templates/conditional_template.jinja file.
   
   ```
   {% if user.is_active %}
@@ -193,8 +193,8 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
 - loop
   
   - Open your project in your favorite code editor.
-  - Create a new jinja template file in the templates directory, named templates/loop-template.jinja
-  - Paste the following query into the templates/conditional-template.jinja file.
+  - Create a new jinja template file in the templates directory, named templates/loop_template.jinja
+  - Paste the following query into the templates/loop_template.jinja file.
   
   ```
   {% for item in items %}
@@ -236,8 +236,8 @@ Jinja allows you to modify the variables by using the **Filters** with a pipe sy
 See more built-in filters at [here]([https://jinja.palletsprojects.com/en/stable/templates/#builtin-filters).
 
 - Open your project in your favorite code editor.
-- Create a new jinja template file in the templates directory, named templates/filter-template.jinja
-- Paste the following query into the templates/variable-template.jinja file.
+- Create a new jinja template file in the templates directory, named templates/filter_template.jinja
+- Paste the following query into the templates/filter_template.jinja file.
 
 ```
 Hello, {{ name|upper }}!
@@ -271,49 +271,6 @@ Hello, {{ name|upper }}!
   ```
   Jinja accept multiple filter, just add `|` after `{{ ...|...|... }}`
 
-  
-  ## 4 Filters​​
-
-Jinja allows you to modify the variables by using the **Filters** with a pipe symbol (`|`) and may have optional arguments in parentheses (`{% ...|... %}`). It works like a function in code.
-See more built-in filters at [here]([https://jinja.palletsprojects.com/en/stable/templates/#builtin-filters).
-
-- Open your project in your favorite code editor.
-- Create a new jinja template file in the templates directory, named templates/filter-template.jinja
-- Paste the following query into the templates/variable-template.jinja file.
-
-```
-Hello, {{ name|upper }}!
-```
-
-- Edit the **jinja2_101.py** python file
-
-  Edit step 3, make jinja engine get the template we just added
-  ```python
-  template = env.get_template('filter_template.jinja')
-  ```
-
-  Edit step 4, pass the data to jinja in order to replace the template placeholder
-  ```python
-  output = template.render(name='World')
-  ```
-
-  Edit step 5, store text into file with given file name 
-  ```python
-  with open("renders/filter_output.txt", 'w') as f:
-  ```
-  
-  By given template and data, we can try jinja2
-  ```bash
-  python3 jinja2_101.py
-  ```
-
-  The result can be checked by console or /renders/filter_output.txt, it should be
-  ```
-  Hello WORLD!
-  ```
-  Jinja accept multiple filter, just add `|` after `{{ ...|...|... }}`
-
-  
 ## 5 Macros​​
 
 Jinja allows you to defined and call reusable pieces of template code by using **Python Code**. By stating `macro` inside Statement Delimiter and use python codes to process the variable.
@@ -324,8 +281,8 @@ Jinja allows you to defined and call reusable pieces of template code by using *
 ```
 
 - Open your project in your favorite code editor.
-- Create a new jinja template file in the templates directory, named templates/macro-template.jinja
-- Paste the following query into the templates/macro-template.jinja file.
+- Create a new jinja template file in the templates directory, named templates/macro_template.jinja
+- Paste the following query into the templates/macro_template.jinja file.
 
 ```
 {% macro format_date(date) %}
@@ -338,7 +295,7 @@ Date: {{ format_date(date) }}
 
   Edit step 3, make jinja engine get the template we just added
   ```python
-  template = env.get_template('macro-template.jinja')
+  template = env.get_template('macro_template.jinja')
   ```
 
   Edit step 4, import library and pass the data to jinja in order to replace the template placeholder
