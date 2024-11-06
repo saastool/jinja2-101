@@ -1,9 +1,11 @@
-from jinja2 import Template
+from jinja2 import Environment, FileSystemLoader, Template
 
-f = open("jinja_template.jinja", "r")
+env = Environment(loader = FileSystemLoader('template'))
+template = env.get_template('variables_template.jinja')
 
-template = Template(f.readline())
-f.close()
+output = template.render(name = 'World')
 
-output = template.render()
 print(output)
+
+with open("renders/variables_output.txt", 'w') as f:
+    print(output, file = f)
