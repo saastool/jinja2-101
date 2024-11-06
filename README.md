@@ -104,7 +104,7 @@ Jinja allows you to insert variables into templates using the **Expression Delim
 Hello {{ name }}!
 ```
 
-- Edit the **jinja2_101.py** python file
+- Copy the **jinja2_101.py** python file into **jinja2.py**
 
   Edit step 3, make jinja engine get the template we just added
   ```python
@@ -123,7 +123,7 @@ Hello {{ name }}!
   
   By given template and data, we can try jinja2
   ```bash
-  python3 jinja2_101.py
+  python3 jinja2.py
   ```
 
   The result can be checked by console or /renders/variable_output.txt, it should be
@@ -149,7 +149,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
   {% endif %}
   ```
   
-  - Edit the **jinja2_101.py** python file
+  - Copy the **jinja2_101.py** python file into **jinja2.py**
   
     Edit step 3, make jinja engine get the template we just added
     ```python
@@ -166,7 +166,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     with open("renders/conditional_true_output.txt", 'w') as f:
     ```
 
-    Copy step 4, 5 and append the **jinja2_101.py** python file, pass the data to jinja in order to replace the template placeholder for the not-active scenario 
+    Copy step 4, 5 and append the **jinja2.py** python file, pass the data to jinja in order to replace the template placeholder for the not-active scenario 
     ```python
     output = template.render(user={'is_active': False, 'name': 'Bob'})
     print(output)
@@ -177,7 +177,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     
     By given template and data, we can try jinja2
     ```bash
-    python3 jinja2_101.py
+    python3 jinja2.py
     ```
   
     The result can be checked by console or /renders/conditional_true_output.txt and /renders/conditional_false_output.txt,
@@ -202,7 +202,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
   {% endfor %}
   ```
   
-  - Edit the **jinja2_101.py** python file
+  - Copy the **jinja2_101.py** python file into **jinja2.py**
   
     Edit step 3, make jinja engine get the template we just added
     ```python
@@ -221,7 +221,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     
     By given template and data, we can try jinja2
     ```bash
-    python3 jinja2_101.py
+    python3 jinja2.py
     ```
   
     The result can be checked by console or /renders/loop_output.txt, it should be:
@@ -243,7 +243,7 @@ See more built-in filters at [here]([https://jinja.palletsprojects.com/en/stable
 Hello, {{ name|upper }}!
 ```
 
-- Edit the **jinja2_101.py** python file
+- Copy the **jinja2_101.py** python file into **jinja2.py**
 
   Edit step 3, make jinja engine get the template we just added
   ```python
@@ -262,7 +262,7 @@ Hello, {{ name|upper }}!
   
   By given template and data, we can try jinja2
   ```bash
-  python3 jinja2_101.py
+  python3 jinja2.py
   ```
 
   The result can be checked by console or /renders/filter_output.txt, it should be
@@ -291,7 +291,7 @@ Jinja allows you to defined and call reusable pieces of template code by using *
 Date: {{ format_date(date) }}
 ```
 
-- Edit the **jinja2_101.py** python file
+- Copy the **jinja2_101.py** python file into **jinja2.py**
 
   Edit step 3, make jinja engine get the template we just added
   ```python
@@ -311,7 +311,7 @@ Date: {{ format_date(date) }}
   
   By given template and data, we can try jinja2
   ```bash
-  python3 jinja2_101.py
+  python3 jinja2.py
   ```
 
   The result can be checked by console or /renders/macro_output.txt, it should be
