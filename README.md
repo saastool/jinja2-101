@@ -39,14 +39,14 @@ This is a `jinja2` quick start turtorial, which intend to help user quickly unde
   - Make sure you have installed conda
   - For conda in Windows, open conda prompt terminal in system administrador priviledge
 
-    ```
-    (base) C:> conda create -n jinja 
-    (base) C:> conda activate jinja
+    ```command
+    (base) ~ % conda create -n jinja 
+    (base) ~ % conda activate jinja
     ```
     
 - Install jinja2
   ```command
-        (jinja) C:> conda install jinja2
+        (jinja) ~ % conda install jinja2
   ```
 - Overview
 
