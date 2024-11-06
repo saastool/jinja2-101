@@ -104,7 +104,7 @@ Jinja allows you to insert variables into templates using the **Expression Delim
 Hello {{ name }}!
 ```
 
-- Copy the **jinja2_101.py** python file into **jinja2.py**
+- Copy the **jinja2_101.py** and renamed **jinja2.py**
 
   Edit step 3, make jinja engine get the template we just added
   ```python
@@ -149,7 +149,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
   {% endif %}
   ```
   
-  - Copy the **jinja2_101.py** python file into **jinja2.py**
+  - Copy the **jinja2_101.py** and renamed **jinja2.py**
   
     Edit step 3, make jinja engine get the template we just added
     ```python
@@ -202,7 +202,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
   {% endfor %}
   ```
   
-  - Copy the **jinja2_101.py** python file into **jinja2.py**
+  - Copy the **jinja2_101.py** and renamed **jinja2.py**
   
     Edit step 3, make jinja engine get the template we just added
     ```python
@@ -243,7 +243,7 @@ See more built-in filters at [here]([https://jinja.palletsprojects.com/en/stable
 Hello, {{ name|upper }}!
 ```
 
-- Copy the **jinja2_101.py** python file into **jinja2.py**
+- Copy the **jinja2_101.py** and renamed **jinja2.py**
 
   Edit step 3, make jinja engine get the template we just added
   ```python
@@ -291,7 +291,7 @@ Jinja allows you to defined and call reusable pieces of template code by using *
 Date: {{ format_date(date) }}
 ```
 
-- Copy the **jinja2_101.py** python file into **jinja2.py**
+- Copy the **jinja2_101.py** and renamed **jinja2.py**
 
   Edit step 3, make jinja engine get the template we just added
   ```python
