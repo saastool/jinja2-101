@@ -106,22 +106,22 @@ Hello {{ name }}!
 
 - Edit the **jinja2_101.py** python file
 
-  - Edit step 3, make jinja engine get the template we just added
+  Edit step 3, make jinja engine get the template we just added
   ```python
   template = env.get_template('variable_template.jinja')
   ```
 
-  - Edit step 4, pass the data to jinja in order to replace the template placeholder
+  Edit step 4, pass the data to jinja in order to replace the template placeholder
   ```python
   output = template.render(name='World')
   ```
 
-  - Edit step 5, store text into file with given file name 
+  Edit step 5, store text into file with given file name 
   ```python
   with open("renders/variable_output.txt", 'w') as f:
   ```
   
-  - By given template and data, we can try jinja2
+  By given template and data, we can try jinja2
   ```bash
   python3 jinja2_101.py
   ```
@@ -151,22 +151,22 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
   
   - Edit the **jinja2_101.py** python file
   
-    - Edit step 3, make jinja engine get the template we just added
+    Edit step 3, make jinja engine get the template we just added
     ```python
     template = env.get_template('conditional_template.jinja')
     ```
   
-    - Edit step 4, pass the data to jinja in order to replace the template placeholder
+    Edit step 4, pass the data to jinja in order to replace the template placeholder
     ```python
     output = template.render(user={'is_active': True, 'name': 'Alice'})
     ```
   
-    - Edit step 5, store text into file with given file name 
+    Edit step 5, store text into file with given file name 
     ```python
     with open("renders/conditional_true_output.txt", 'w') as f:
     ```
 
-    - Copy step 4, 5 and append the **jinja2_101.py** python file, pass the data to jinja in order to replace the template placeholder for the not-active scenario 
+    Copy step 4, 5 and append the **jinja2_101.py** python file, pass the data to jinja in order to replace the template placeholder for the not-active scenario 
     ```python
     output = template.render(user={'is_active': False, 'name': 'Bob'})
     print(output)
@@ -174,7 +174,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     with open("renders/conditional_false_output.txt", 'w') as f:
     ```
     
-    - By given template and data, we can try jinja2
+    By given template and data, we can try jinja2
     ```bash
     python3 jinja2_101.py
     ```
@@ -203,22 +203,22 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
   
   - Edit the **jinja2_101.py** python file
   
-    - Edit step 3, make jinja engine get the template we just added
+    Edit step 3, make jinja engine get the template we just added
     ```python
     template = env.get_template('loop_template.jinja')
     ```
   
-    - Edit step 4, pass the data to jinja in order to replace the template placeholder
+    Edit step 4, pass the data to jinja in order to replace the template placeholder
     ```python
     output = template.render(items=['Apple', 'Banana', 'Cherry'])
     ```
   
-    - Edit step 5, store text into file with given file name 
+    Edit step 5, store text into file with given file name 
     ```python
     with open("renders/loop_output.txt", 'w') as f:
     ```
     
-    - By given template and data, we can try jinja2
+    By given template and data, we can try jinja2
     ```bash
     python3 jinja2_101.py
     ```
@@ -244,22 +244,22 @@ Hello, {{ name|upper }}!
 
 - Edit the **jinja2_101.py** python file
 
-  - Edit step 3, make jinja engine get the template we just added
+  Edit step 3, make jinja engine get the template we just added
   ```python
   template = env.get_template('filter_template.jinja')
   ```
 
-  - Edit step 4, pass the data to jinja in order to replace the template placeholder
+  Edit step 4, pass the data to jinja in order to replace the template placeholder
   ```python
   output = template.render(name='World')
   ```
 
-  - Edit step 5, store text into file with given file name 
+  Edit step 5, store text into file with given file name 
   ```python
   with open("renders/filter_output.txt", 'w') as f:
   ```
   
-  - By given template and data, we can try jinja2
+  By given template and data, we can try jinja2
   ```bash
   python3 jinja2_101.py
   ```
@@ -286,22 +286,22 @@ Hello, {{ name|upper }}!
 
 - Edit the **jinja2_101.py** python file
 
-  - Edit step 3, make jinja engine get the template we just added
+  Edit step 3, make jinja engine get the template we just added
   ```python
   template = env.get_template('filter_template.jinja')
   ```
 
-  - Edit step 4, pass the data to jinja in order to replace the template placeholder
+  Edit step 4, pass the data to jinja in order to replace the template placeholder
   ```python
   output = template.render(name='World')
   ```
 
-  - Edit step 5, store text into file with given file name 
+  Edit step 5, store text into file with given file name 
   ```python
   with open("renders/filter_output.txt", 'w') as f:
   ```
   
-  - By given template and data, we can try jinja2
+  By given template and data, we can try jinja2
   ```bash
   python3 jinja2_101.py
   ```
@@ -335,23 +335,23 @@ Date: {{ format_date(date) }}
 
 - Edit the **jinja2_101.py** python file
 
-  - Edit step 3, make jinja engine get the template we just added
+  Edit step 3, make jinja engine get the template we just added
   ```python
   template = env.get_template('macro-template.jinja')
   ```
 
-  - Edit step 4, import library and pass the data to jinja in order to replace the template placeholder
+  Edit step 4, import library and pass the data to jinja in order to replace the template placeholder
   ```python
   from datetime import datetime
   output = template.render(date=datetime.now())
   ```
 
-  - Edit step 5, store text into file with given file name 
+  Edit step 5, store text into file with given file name 
   ```python
   with open("renders/macro_output.txt", 'w') as f:
   ```
   
-  - By given template and data, we can try jinja2
+  By given template and data, we can try jinja2
   ```bash
   python3 jinja2_101.py
   ```
