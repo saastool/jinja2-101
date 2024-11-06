@@ -1,0 +1,4 @@
+{% macro format_date(date) %}
+  {{ date.strftime('%Y-%m-%d') }}
+{% endmacro %}
+Date: {{ format_date(date) }}

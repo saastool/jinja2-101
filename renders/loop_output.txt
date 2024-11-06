@@ -1,0 +1,7 @@
+
+The current fruit name is Apple
+
+The current fruit name is Banana
+
+The current fruit name is Cherry
+
