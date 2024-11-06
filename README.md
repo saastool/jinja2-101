@@ -97,8 +97,8 @@ This is a `jinja2` quick start turtorial, which intend to help user quickly unde
 Jinja allows you to insert variables into templates using the **Expression Delimiter: `{{ ... }}`**. Jinja would replace the placeholder from the given data.
 
 - Open your project in your favorite code editor.
-- Create a new jinja template file in the templates directory, named templates/variable_template.jinja
-- Paste the following query into the templates/variable_template.jinja file.
+- Create a new jinja template file in the templates directory, named templates/**variable_template.jinja**
+- Paste the following query into the templates/**variable_template.jinja** file.
 
 ```
 Hello {{ name }}!
@@ -126,7 +126,7 @@ Hello {{ name }}!
   python3 jinja.py
   ```
 
-  The result can be checked by console or /renders/variable_output.txt, it should be
+  The result can be checked by console or /renders/**variable_output.txt**, it should be
   ```
   Hello World!
   ```
@@ -138,8 +138,8 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
 - Conditions
   
   - Open your project in your favorite code editor.
-  - Create a new jinja template file in the templates directory, named templates/conditional_template.jinja
-  - Paste the following query into the templates/conditional_template.jinja file.
+  - Create a new jinja template file in the templates directory, named templates/**conditional_template.jinja**
+  - Paste the following query into the templates/**conditional_template.jinja** file.
   
   ```
   {% if user.is_active %}
@@ -180,12 +180,12 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     python3 jinja.py
     ```
   
-    The result can be checked by console or /renders/conditional_true_output.txt and /renders/conditional_false_output.txt,
-    the /renders/conditional_true_output.txt should be:
+    The result can be checked by console or /renders/**conditional_true_output.txt** and /renders/**conditional_false_output.txt**,
+    the /renders/**conditional_true_output.txt** should be:
     ```
     Hello, Alice!
     ```
-    and the /renders/conditional_false_output.txt should be:
+    and the /renders/**conditional_false_output.txt** should be:
     ```
     Please activate your account.
     ```
@@ -193,8 +193,8 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
 - loop
   
   - Open your project in your favorite code editor.
-  - Create a new jinja template file in the templates directory, named templates/loop_template.jinja
-  - Paste the following query into the templates/loop_template.jinja file.
+  - Create a new jinja template file in the templates directory, named templates/**loop_template.jinja**
+  - Paste the following query into the templates/**loop_template.jinja** file.
   
   ```
   {% for item in items %}
@@ -224,7 +224,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     python3 jinja.py
     ```
   
-    The result can be checked by console or /renders/loop_output.txt, it should be:
+    The result can be checked by console or /renders/**loop_output.txt**, it should be:
     ```
     The current fruit name is Apple
     The current fruit name is Banana
@@ -236,8 +236,8 @@ Jinja allows you to modify the variables by using the **Filters** with a pipe sy
 See more built-in filters at [here]([https://jinja.palletsprojects.com/en/stable/templates/#builtin-filters).
 
 - Open your project in your favorite code editor.
-- Create a new jinja template file in the templates directory, named templates/filter_template.jinja
-- Paste the following query into the templates/filter_template.jinja file.
+- Create a new jinja template file in the templates directory, named templates/**filter_template.jinja**
+- Paste the following query into the templates/**filter_template.jinja** file.
 
 ```
 Hello, {{ name|upper }}!
@@ -265,7 +265,7 @@ Hello, {{ name|upper }}!
   python3 jinja.py
   ```
 
-  The result can be checked by console or /renders/filter_output.txt, it should be
+  The result can be checked by console or /renders/**filter_output.txt**, it should be
   ```
   Hello WORLD!
   ```
@@ -281,8 +281,8 @@ Jinja allows you to defined and call reusable pieces of template code by using *
 ```
 
 - Open your project in your favorite code editor.
-- Create a new jinja template file in the templates directory, named templates/macro_template.jinja
-- Paste the following query into the templates/macro_template.jinja file.
+- Create a new jinja template file in the templates directory, named templates/**macro_template.jinja**
+- Paste the following query into the templates/**macro_template.jinja** file.
 
 ```
 {% macro format_date(date) %}
@@ -314,9 +314,10 @@ Date: {{ format_date(date) }}
   python3 jinja.py
   ```
 
-  The result can be checked by console or /renders/macro_output.txt, it should be
+  The result can be checked by console or /renders/**macro_output.txt**, it should be
   ```
-  Date: (Today's Date with YYYY-MM-DD)
+  Date:
+    (Today's Date with YYYY-MM-DD)
   ```
 
 So far we have learned the basic knowledge to using proper jinja, although Jinja has many deeper and complex usage (such as template inheritance) we didn't cover it in this basic turtorial. If you are interested in diving in, you can learn more at the [official website](https://jinja.palletsprojects.com/en/stable/templates/#template-inheritance).
