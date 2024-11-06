@@ -319,7 +319,7 @@ Date: {{ format_date(date) }}
   Date:
     (Today's Date with YYYY-MM-DD)
   ```
-  - Sometimes white space and break line is intolerance or we simply want our text to be tidy. We can add minus sign `-` to the start or end of a block , a comment, or a variable expression, the whitespaces before or after that block will be removed. Let's give it a try.
+- Sometimes white space and break line is intolerance or we simply want our text to be clean. We can add minus sign `-` to the start or end of a block , a comment, or a variable expression, the whitespaces before or after that block will be removed. Let's give it a try.
 
   Edit our templates/**macro_template.jinja** file.
   ```
@@ -329,10 +329,10 @@ Date: {{ format_date(date) }}
   Date: {{ format_date(date) }}
   ```
 
-Now the result would be like 
-```
-Date: (Today's Date with YYYY-MM-DD)
-```
+  Now the result would be like 
+  ```
+  Date: (Today's Date with YYYY-MM-DD)
+  ```
 
 So far we have learned the basic knowledge to using proper jinja, although Jinja has many deeper and complex usage (such as template inheritance) we didn't cover it in this basic turtorial. If you are interested in diving in, you can learn more at the [official website](https://jinja.palletsprojects.com/en/stable/templates/#template-inheritance).
 
