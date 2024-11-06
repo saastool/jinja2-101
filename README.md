@@ -172,6 +172,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     print(output)
     
     with open("renders/conditional_false_output.txt", 'w') as f:
+       print(output, file = f)
     ```
     
     By given template and data, we can try jinja2
