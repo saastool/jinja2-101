@@ -358,8 +358,9 @@ Date: {{ format_date(date) }}
 
   The result can be checked by console or /renders/macro_output.txt, it should be
   ```
- Date: (Today's Date with YYYY-MM-DD)
+  Date: (Today's Date with YYYY-MM-DD)
   ```
 
-So far we learn about the basic knowledge to using proper jinja, although Jinja has many deeper and complex usage (such as template inheritance) we didn't cover in this basic turtorial. If you interest in diving into it, you can learn more at the [official website](https://jinja.palletsprojects.com/en/stable/templates/#template-inheritance).
+So far we have learned the basic knowledge to using proper jinja, although Jinja has many deeper and complex usage (such as template inheritance) we didn't cover it in this basic turtorial. If you are interested in diving in, you can learn more at the [official website](https://jinja.palletsprojects.com/en/stable/templates/#template-inheritance).
+
 Now, with the proper knowledge of jinja, we are ready to use jinja in DBT.
