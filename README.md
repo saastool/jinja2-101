@@ -232,7 +232,7 @@ Jinja allows you to do some logistic controling by using **Statement Delimiter: 
     ```
 ## 4 Filters​​
 
-Jinja allows you to modify the variables by using the **Filters** with a pipe symbol (`|`) and may have optional arguments in parentheses (`{% ...|... %}`). It works like a function in code.
+Jinja allows you to modify the variables by using the **Filters** with a pipe symbol (`|`) and may have optional arguments in parentheses (`{% ...|... %}`).
 See more built-in filters at [here]([https://jinja.palletsprojects.com/en/stable/templates/#builtin-filters).
 
 - Open your project in your favorite code editor.
